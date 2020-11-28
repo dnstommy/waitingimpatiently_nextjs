@@ -6,7 +6,7 @@ export default function Header() {
 			<div className="container">
 				<div className="row">
 					<div className="col-12 col-md-10 offset-md-1">
-						<h2 className="font-weight-normal">Post title</h2>
+						<h2 className="something__three font-weight-normal">Post title</h2>
 						<ul className="list-inline-dash">
 							<li><a href="#">by Admin</a></li>
 							<li><a href="#">Category</a></li>

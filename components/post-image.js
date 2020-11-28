@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import markdownStyles from './test2.css'
 
 export default function Header() {
   return (

@@ -9,11 +9,16 @@
   },
   "dependencies": {
     "@contentful/rich-text-react-renderer": "14.1.1",
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "bootstrap": "^4.5.3",
     "classnames": "2.2.6",
     "date-fns": "2.14.0",
+    "magnific-popup": "^1.1.0",
     "next": "latest",
+    "owl.carousel": "^2.3.4",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "simple-line-icons": "^2.5.5"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
