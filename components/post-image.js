@@ -1,9 +1,9 @@
 import Link from 'next/link'
 
-export default function Header() {
+export default function PostImage({url}) {
   return (
     <div className="container myclass">
-        <img src="../assets/images/col-1.jpg" alt="" />
+        <img src={url} alt="" />
     </div>
   )
 }

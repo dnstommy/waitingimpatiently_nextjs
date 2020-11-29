@@ -2,10 +2,11 @@ import { useRouter } from 'next/router'
 import Head from 'next/head'
 import ErrorPage from 'next/error'
 import Container from '../../components/container'
+import Header from '../../components/header'
 import PostImage from '../../components/post-image'
 import PostBody from '../../components/post-body'
 import MoreStories from '../../components/more-stories'
-import Header from '../../components/header'
+import PostInfo from '../../components/post-info'
 import PostHeader from '../../components/post-header'
 import SectionSeparator from '../../components/section-separator'
 import Layout from '../../components/layout'
@@ -20,25 +21,28 @@ export default function Post({ post, morePosts, preview }) {
     return <ErrorPage statusCode={404} />
   }
 
+  console.log(post);
+
   return (
     <Layout preview={preview}>
+      <Header />
       <Container>
-        <Header />
+         <PostInfo date={post.date} />
           <>
             <article>
               <Head>
                 <title>
-                  {post.title} | Next.js Blog Example with {CMS_NAME}
+                  {post.title} | WaitingImpatiently
                 </title>
                 <meta property="og:image" content={post.coverImage.url} />
               </Head>
-              {/* <PostHeader
+              {/* {<PostHeader
                 title={post.title}
                 coverImage={post.coverImage}
                 date={post.date}
                 author={post.author}
-              /> */}
-              <PostImage />
+              /> } */}
+              <PostImage url={post.coverImage.url} />
               <PostBody content={post.content} />
             </article>
             {/* <SectionSeparator />
